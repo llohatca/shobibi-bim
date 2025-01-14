@@ -7,6 +7,7 @@ require("telescope").setup {
     map("n", "<leader>fw", builtin.live_grep, { desc = "Telescope live grep" }),
     map("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" }),
     map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" }),
+    map("n", "<leader>ma", "<cmd>Telescope marks<CR>", { desc = "telescope find marks" }),
 
     -- LSP
     map("n", "<leader>fr", builtin.lsp_references, { desc = "Telescope find files" }),
