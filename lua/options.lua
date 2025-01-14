@@ -6,7 +6,7 @@ opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 wo.number = true
-wo.relativenumber = true
+wo.relativenumber = false
 opt.updatetime = 100
 wo.signcolumn = "yes"
 opt.scrolloff = 8
@@ -19,7 +19,7 @@ opt.mouse = "a"
 opt.mousefocus = true
 
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 
 opt.splitbelow = true
 opt.splitright = true
