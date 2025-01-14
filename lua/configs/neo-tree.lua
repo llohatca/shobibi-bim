@@ -159,6 +159,7 @@ require("neo-tree").setup {
             mappings = {
                 ["<cr>"] = "open",
                 ["<Tab>"] = "open",
+                ["<esc>"] = "cancel", -- close preview or floating neo-tree window
                 ["<bs>"] = "navigate_up",
                 ["."] = "set_root",
                 ["H"] = "toggle_hidden",
