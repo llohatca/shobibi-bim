@@ -77,6 +77,14 @@ require("lazy").setup {
         },
     },
     {
+        "echasnovski/mini.animate",
+        event = "VeryLazy",
+        dependencies = "echasnovski/mini.nvim",
+        config = function()
+            require "configs.mini-animate"
+        end,
+    },
+    {
         "rcarriga/nvim-dap-ui",
         event = "VeryLazy",
         dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
