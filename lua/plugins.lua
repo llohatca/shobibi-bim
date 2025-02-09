@@ -185,7 +185,6 @@ require("lazy").setup {
     {
         "neovim/nvim-lspconfig",
         event = "User FilePost",
-        dependencies = "williamboman/mason-lspconfig.nvim",
         config = function()
             require "configs.nvim-lspconfig"
         end,
@@ -193,7 +192,6 @@ require("lazy").setup {
     {
         "stevearc/conform.nvim",
         event = "BufWritePre",
-        dependencies = "zapling/mason-conform.nvim",
         config = function()
             require "configs.conform"
         end,
@@ -201,7 +199,6 @@ require("lazy").setup {
     {
         "mfussenegger/nvim-lint",
         event = "VeryLazy",
-        dependencies = "rshkarin/mason-nvim-lint",
         config = function()
             require "configs.lint"
         end,
@@ -231,18 +228,6 @@ require("lazy").setup {
             end
         end,
     },
-
-    {
-        "jay-babu/mason-nvim-dap.nvim",
-        event = "VeryLazy",
-        dependencies = {
-            "williamboman/mason.nvim",
-            "mfussenegger/nvim-dap",
-        },
-        config = function()
-            require "configs.mason-dap-nvim"
-        end,
-    },
     {
         "mfussenegger/nvim-dap-python",
         ft = "python",
@@ -250,18 +235,10 @@ require("lazy").setup {
             "mfussenegger/nvim-dap",
             "rcarriga/nvim-dap-ui",
             "nvim-neotest/nvim-nio",
-            "jay-babu/mason-nvim-dap.nvim",
         },
         config = function(_, opts)
             local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
             require("dap-python").setup(path)
-        end,
-    },
-    {
-        "williamboman/mason.nvim",
-        cmd = { "Mason" },
-        config = function()
-            require "configs.mason"
         end,
     },
     {
@@ -376,7 +353,6 @@ require("lazy").setup {
     },
     {
         "pmizio/typescript-tools.nvim",
-        event = "VeryLazy",
         ft = {
             "astro",
             "glimmer",
@@ -401,9 +377,5 @@ require("lazy").setup {
     {
         "eandrju/cellular-automaton.nvim",
         cmd = "CellularAutomaton",
-    },
-    {
-        "andweeb/presence.nvim",
-        event = "VeryLazy",
     },
 }

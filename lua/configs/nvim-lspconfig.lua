@@ -8,14 +8,6 @@ local lsp = vim.lsp
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-require("mason-lspconfig").setup {
-
-    ensure_installed = {
-        "rust_analyzer",
-    },
-    automatic_installation = true,
-}
-
 local border = g.re_nvim_style ~= "minimal"
         and {
             { "╭", "FloatBorder" },
