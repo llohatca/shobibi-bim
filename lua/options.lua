@@ -5,7 +5,7 @@ local wo = vim.wo
 ---@diagnostic enable: undefined-global
 
 g.re_nvim_style = "minimal" -- normal | minimal
-g.re_nvim_theme = "gruvbox" -- catppuccin | gruvbox | none
+g.re_nvim_theme = "catppuccin" -- catppuccin | gruvbox | none
 
 opt.cursorline = true
 opt.colorcolumn = "120"
@@ -16,11 +16,10 @@ wo.number = true
 wo.relativenumber = false
 opt.updatetime = 100
 wo.signcolumn = "yes"
-opt.scrolloff = 8
+opt.scrolloff = 10
 wo.linebreak = true
 opt.virtualedit = "block"
 opt.undofile = true
-opt.shell = "/usr/bin/env zsh"
 
 opt.mouse = "a"
 opt.mousefocus = true
