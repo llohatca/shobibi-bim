@@ -53,7 +53,7 @@ map("n", "<leader>ld", diagnostic.setloclist, { desc = "LSP Diagnostic list" })
 
 -- Toggle Term
 map("n", "<leader>h", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
-map("n", "<leader>f", "<cmd>ToggleTerm direction=float<CR>", { desc = "Toggle floating terminal" })
+map("n", "<leader>t", "<cmd>ToggleTerm direction=float<CR>", { desc = "Toggle floating terminal" })
 
 api.nvim_create_autocmd("LspAttach", {
     group = api.nvim_create_augroup("UserLspConfig", {}),
